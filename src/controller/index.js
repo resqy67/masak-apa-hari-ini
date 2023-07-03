@@ -133,7 +133,7 @@ const limiterRecipes = (req, res, response, limiter) => {
 
         const recipes_limit = recipe_list.splice(0, limiter);
         console.log('limiter');
-        if (limiter > 10) {
+        if (limiter > 12) {
             res.send({
                 method: req.method,
                 status: false,
