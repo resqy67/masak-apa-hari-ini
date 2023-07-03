@@ -284,12 +284,12 @@ const Controller = {
             });
 
             object.ingredient = ingredientsArr;
-            let step, resultStep;
+            let step;
             let stepArr = [];
             elementTutorial.find('.step').each((i, e) => {
                 step = $(e).find('.content p').text();
-                resultStep = `${i + 1}. ${step}`
-                stepArr.push(resultStep);
+                // resultStep = `${step}`
+                stepArr.push(step);
             });
 
             object.step = stepArr;
